@@ -1,0 +1,29 @@
+{
+  "ast": null,
+  "code": "import React from \"react\";\nimport View from \"react-native-web/dist/exports/View\";\nimport Text from \"react-native-web/dist/exports/Text\";\nimport Image from \"react-native-web/dist/exports/Image\";\nimport TouchableOpacity from \"react-native-web/dist/exports/TouchableOpacity\";\nimport MaterialCommunityIcons from \"@expo/vector-icons/MaterialCommunityIcons\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\nimport { Fragment as _Fragment } from \"react/jsx-runtime\";\nimport { jsxs as _jsxs } from \"react/jsx-runtime\";\n\nfunction RestaurantItem(props) {\n  return _jsx(View, {\n    children: _jsx(restaurantImage, {})\n  });\n}\n\nvar restaurantImage = function restaurantImage() {\n  return _jsxs(_Fragment, {\n    children: [_jsx(Image, {\n      source: {\n        uri: \"https://picsum.photos/200/\"\n      },\n      style: {\n        width: \"100%\",\n        height: 180\n      }\n    }), _jsx(TouchableOpacity, {\n      children: _jsx(MaterialCommunityIcons, {\n        name: \"heart-outline\",\n        size: 24,\n        color: \"black\",\n        style: {\n          position: \"absolute\",\n          right: 20,\n          top: 20\n        }\n      })\n    })]\n  });\n};\n\nexport default RestaurantItem;",
+  "map": {
+    "version": 3,
+    "sources": [
+      "C:/Users/tomer/OneDrive/Desktop/uberEats/uber-eats-clone/components/RestaurantItem.js"
+    ],
+    "names": [
+      "React",
+      "MaterialCommunityIcons",
+      "RestaurantItem",
+      "props",
+      "restaurantImage",
+      "uri",
+      "width",
+      "height",
+      "position",
+      "right",
+      "top"
+    ],
+    "mappings": "AAAA,OAAOA,KAAP,MAAkB,OAAlB;;;;;AAEA,OAAOC,sBAAP;;;;;AAEA,SAASC,cAAT,CAAwBC,KAAxB,EAA+B;AAC7B,SACE,KAAC,IAAD;AAAA,cAEE,KAAC,eAAD;AAFF,IADF;AAOD;;AAED,IAAMC,eAAe,GAAG,SAAlBA,eAAkB;AAAA,SACtB;AAAA,eACE,KAAC,KAAD;AACE,MAAA,MAAM,EAAE;AACNC,QAAAA,GAAG,EAAE;AADC,OADV;AAIE,MAAA,KAAK,EAAE;AACLC,QAAAA,KAAK,EAAE,MADF;AAELC,QAAAA,MAAM,EAAE;AAFH;AAJT,MADF,EAUE,KAAC,gBAAD;AAAA,gBACE,KAAC,sBAAD;AACE,QAAA,IAAI,EAAC,eADP;AAEE,QAAA,IAAI,EAAE,EAFR;AAGE,QAAA,KAAK,EAAE,OAHT;AAIE,QAAA,KAAK,EAAE;AACLC,UAAAA,QAAQ,EAAE,UADL;AAELC,UAAAA,KAAK,EAAE,EAFF;AAGLC,UAAAA,GAAG,EAAE;AAHA;AAJT;AADF,MAVF;AAAA,IADsB;AAAA,CAAxB;;AA0BA,eAAeR,cAAf",
+    "sourcesContent": [
+      "import React from \"react\";\r\nimport { View, Text, Image, TouchableOpacity } from \"react-native\";\r\nimport MaterialCommunityIcons from \"react-native-vector-icons/MaterialCommunityIcons\";\r\n\r\nfunction RestaurantItem(props) {\r\n  return (\r\n    <View>\r\n      {/*Image */}\r\n      <restaurantImage />\r\n      {/*Info */}\r\n    </View>\r\n  );\r\n}\r\n\r\nconst restaurantImage = () => (\r\n  <>\r\n    <Image\r\n      source={{\r\n        uri: \"https://picsum.photos/200/\",\r\n      }}\r\n      style={{\r\n        width: \"100%\",\r\n        height: 180,\r\n      }}\r\n    ></Image>\r\n    <TouchableOpacity>\r\n      <MaterialCommunityIcons\r\n        name=\"heart-outline\"\r\n        size={24}\r\n        color={\"black\"}\r\n        style={{\r\n          position: \"absolute\",\r\n          right: 20,\r\n          top: 20,\r\n        }}\r\n      ></MaterialCommunityIcons>\r\n    </TouchableOpacity>\r\n  </>\r\n);\r\n\r\nexport default RestaurantItem;\r\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

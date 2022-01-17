@@ -1,0 +1,39 @@
+{
+  "ast": null,
+  "code": "import React from \"react\";\nimport View from \"react-native-web/dist/exports/View\";\nimport Text from \"react-native-web/dist/exports/Text\";\nimport Image from \"react-native-web/dist/exports/Image\";\nimport TouchableOpacity from \"react-native-web/dist/exports/TouchableOpacity\";\nimport ImageBackground from \"react-native-web/dist/exports/ImageBackground\";\nimport MaterialCommunityIcons from \"@expo/vector-icons/MaterialCommunityIcons\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\nimport { jsxs as _jsxs } from \"react/jsx-runtime\";\nimport { Fragment as _Fragment } from \"react/jsx-runtime\";\n\nfunction RestaurantItem(props) {\n  return _jsxs(View, {\n    children: [_jsx(restaurantImage, {}), _jsx(restaurantInfo, {})]\n  });\n}\n\nvar restaurantImage = function restaurantImage() {\n  return _jsx(_Fragment, {\n    children: _jsx(View, {\n      children: _jsx(ImageBackground, {\n        source: {\n          uri: \"https://picsum.photos/200/\"\n        },\n        style: {\n          width: \"100%\",\n          height: 180\n        },\n        children: _jsx(TouchableOpacity, {\n          children: _jsx(MaterialCommunityIcons, {\n            name: \"heart-outline\",\n            size: 24,\n            color: \"#fff\",\n            style: {\n              position: \"absolute\",\n              right: 20,\n              top: 20\n            }\n          })\n        })\n      })\n    })\n  });\n};\n\nvar restaurantInfo = function restaurantInfo() {\n  return _jsxs(View, {\n    style: {\n      flexDirection: \"row\",\n      justifyContent: \"space-between\",\n      alignItems: \"center\",\n      marginTop: 10\n    },\n    children: [_jsxs(View, {\n      children: [_jsx(Text, {\n        style: {\n          fontWeight: \"bold\",\n          fontSize: 16\n        },\n        children: \"Formhouse Kitchen Thai Cousine\"\n      }), _jsx(Text, {\n        style: {\n          fontSize: 16,\n          color: \"grey\"\n        },\n        children: \"30-45 min\"\n      })]\n    }), _jsx(View, {\n      style: {\n        backgroundColor: \"#grey\",\n        height: 30,\n        width: 30,\n        alignItems: \"center\",\n        borderRadius: 20\n      },\n      children: _jsx(Text, {\n        style: {\n          fontWeight: \"bold\",\n          fontSize: 16\n        },\n        children: \"4.5\"\n      })\n    })]\n  });\n};\n\nexport default RestaurantItem;",
+  "map": {
+    "version": 3,
+    "sources": [
+      "C:/Users/tomer/OneDrive/Desktop/uberEats/uber-eats-clone/components/RestaurantItem.js"
+    ],
+    "names": [
+      "React",
+      "MaterialCommunityIcons",
+      "RestaurantItem",
+      "props",
+      "restaurantImage",
+      "uri",
+      "width",
+      "height",
+      "position",
+      "right",
+      "top",
+      "restaurantInfo",
+      "flexDirection",
+      "justifyContent",
+      "alignItems",
+      "marginTop",
+      "fontWeight",
+      "fontSize",
+      "color",
+      "backgroundColor",
+      "borderRadius"
+    ],
+    "mappings": "AAAA,OAAOA,KAAP,MAAkB,OAAlB;;;;;;AAQA,OAAOC,sBAAP;;;;;AAEA,SAASC,cAAT,CAAwBC,KAAxB,EAA+B;AAC7B,SACE,MAAC,IAAD;AAAA,eAEE,KAAC,eAAD,KAFF,EAIE,KAAC,cAAD,KAJF;AAAA,IADF;AAQD;;AAED,IAAMC,eAAe,GAAG,SAAlBA,eAAkB;AAAA,SACtB;AAAA,cACE,KAAC,IAAD;AAAA,gBACE,KAAC,eAAD;AACE,QAAA,MAAM,EAAE;AACNC,UAAAA,GAAG,EAAE;AADC,SADV;AAIE,QAAA,KAAK,EAAE;AACLC,UAAAA,KAAK,EAAE,MADF;AAELC,UAAAA,MAAM,EAAE;AAFH,SAJT;AAAA,kBASE,KAAC,gBAAD;AAAA,oBACE,KAAC,sBAAD;AACE,YAAA,IAAI,EAAC,eADP;AAEE,YAAA,IAAI,EAAE,EAFR;AAGE,YAAA,KAAK,EAAE,MAHT;AAIE,YAAA,KAAK,EAAE;AACLC,cAAAA,QAAQ,EAAE,UADL;AAELC,cAAAA,KAAK,EAAE,EAFF;AAGLC,cAAAA,GAAG,EAAE;AAHA;AAJT;AADF;AATF;AADF;AADF,IADsB;AAAA,CAAxB;;AA6BA,IAAMC,cAAc,GAAG,SAAjBA,cAAiB;AAAA,SACrB,MAAC,IAAD;AACE,IAAA,KAAK,EAAE;AACLC,MAAAA,aAAa,EAAE,KADV;AAELC,MAAAA,cAAc,EAAE,eAFX;AAGLC,MAAAA,UAAU,EAAE,QAHP;AAILC,MAAAA,SAAS,EAAE;AAJN,KADT;AAAA,eAQE,MAAC,IAAD;AAAA,iBACE,KAAC,IAAD;AACE,QAAA,KAAK,EAAE;AACLC,UAAAA,UAAU,EAAE,MADP;AAELC,UAAAA,QAAQ,EAAE;AAFL,SADT;AAAA;AAAA,QADF,EASE,KAAC,IAAD;AACE,QAAA,KAAK,EAAE;AACLA,UAAAA,QAAQ,EAAE,EADL;AAELC,UAAAA,KAAK,EAAE;AAFF,SADT;AAAA;AAAA,QATF;AAAA,MARF,EA0BE,KAAC,IAAD;AACE,MAAA,KAAK,EAAE;AACLC,QAAAA,eAAe,EAAE,OADZ;AAELZ,QAAAA,MAAM,EAAE,EAFH;AAGLD,QAAAA,KAAK,EAAE,EAHF;AAILQ,QAAAA,UAAU,EAAE,QAJP;AAKLM,QAAAA,YAAY,EAAE;AALT,OADT;AAAA,gBASE,KAAC,IAAD;AACE,QAAA,KAAK,EAAE;AACLJ,UAAAA,UAAU,EAAE,MADP;AAELC,UAAAA,QAAQ,EAAE;AAFL,SADT;AAAA;AAAA;AATF,MA1BF;AAAA,IADqB;AAAA,CAAvB;;AAgDA,eAAef,cAAf",
+    "sourcesContent": [
+      "import React from \"react\";\r\nimport {\r\n  View,\r\n  Text,\r\n  Image,\r\n  TouchableOpacity,\r\n  ImageBackground,\r\n} from \"react-native\";\r\nimport MaterialCommunityIcons from \"react-native-vector-icons/MaterialCommunityIcons\";\r\n\r\nfunction RestaurantItem(props) {\r\n  return (\r\n    <View>\r\n      {/*Image */}\r\n      <restaurantImage />\r\n      {/*Info */}\r\n      <restaurantInfo />\r\n    </View>\r\n  );\r\n}\r\n\r\nconst restaurantImage = () => (\r\n  <>\r\n    <View>\r\n      <ImageBackground\r\n        source={{\r\n          uri: \"https://picsum.photos/200/\",\r\n        }}\r\n        style={{\r\n          width: \"100%\",\r\n          height: 180,\r\n        }}\r\n      >\r\n        <TouchableOpacity>\r\n          <MaterialCommunityIcons\r\n            name=\"heart-outline\"\r\n            size={24}\r\n            color={\"#fff\"}\r\n            style={{\r\n              position: \"absolute\",\r\n              right: 20,\r\n              top: 20,\r\n            }}\r\n          ></MaterialCommunityIcons>\r\n        </TouchableOpacity>\r\n      </ImageBackground>\r\n    </View>\r\n  </>\r\n);\r\n\r\nconst restaurantInfo = () => (\r\n  <View\r\n    style={{\r\n      flexDirection: \"row\",\r\n      justifyContent: \"space-between\",\r\n      alignItems: \"center\",\r\n      marginTop: 10,\r\n    }}\r\n  >\r\n    <View>\r\n      <Text\r\n        style={{\r\n          fontWeight: \"bold\",\r\n          fontSize: 16,\r\n        }}\r\n      >\r\n        Formhouse Kitchen Thai Cousine\r\n      </Text>\r\n      <Text\r\n        style={{\r\n          fontSize: 16,\r\n          color: \"grey\",\r\n        }}\r\n      >\r\n        30-45 min\r\n      </Text>\r\n    </View>\r\n    <View\r\n      style={{\r\n        backgroundColor: \"#grey\",\r\n        height: 30,\r\n        width: 30,\r\n        alignItems: \"center\",\r\n        borderRadius: 20,\r\n      }}\r\n    >\r\n      <Text\r\n        style={{\r\n          fontWeight: \"bold\",\r\n          fontSize: 16,\r\n        }}\r\n      >\r\n        4.5\r\n      </Text>\r\n    </View>\r\n  </View>\r\n);\r\n\r\nexport default RestaurantItem;\r\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}

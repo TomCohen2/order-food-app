@@ -1,10 +1,26 @@
 {
   "dependencies": {
+    "@react-navigation/native": "^6.0.2",
+    "@react-navigation/stack": "^6.0.7",
     "expo": "^44.0.0",
+    "firebase": "8.2.3",
+    "lottie-react-native": "5.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
-    "react-native-web": "0.17.1"
+    "react-native-bouncy-checkbox": "^2.1.4",
+    "react-native-elements": "^3.4.2",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-google-places-autocomplete": "^2.4.1",
+    "react-native-paper": "^4.11.2",
+    "react-native-reanimated": "~2.3.1",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-safe-area-view": "^1.1.1",
+    "react-native-vector-icons": "^8.1.0",
+    "react-native-web": "0.17.1",
+    "react-redux": "^7.2.5",
+    "reanimated-bottom-sheet": "^1.0.0-alpha.22",
+    "tslib": "^2.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
@@ -16,7 +32,5 @@
     "web": "expo start --web",
     "eject": "expo eject"
   },
-  "version": "1.0.0",
-  "private": true,
-  "name": "uber-eats-clone"
+  "private": true
 }

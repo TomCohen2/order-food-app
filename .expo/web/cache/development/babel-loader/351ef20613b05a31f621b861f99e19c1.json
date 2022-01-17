@@ -1,0 +1,52 @@
+{
+  "ast": null,
+  "code": "import React from \"react\";\nimport View from \"react-native-web/dist/exports/View\";\nimport Text from \"react-native-web/dist/exports/Text\";\nimport Image from \"react-native-web/dist/exports/Image\";\nimport TouchableOpacity from \"react-native-web/dist/exports/TouchableOpacity\";\nimport ImageBackground from \"react-native-web/dist/exports/ImageBackground\";\nimport MaterialCommunityIcons from \"@expo/vector-icons/MaterialCommunityIcons\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\nimport { jsxs as _jsxs } from \"react/jsx-runtime\";\nimport { Fragment as _Fragment } from \"react/jsx-runtime\";\nvar localRestaurants = [{\n  name: \"Beachside Bar\",\n  image_url: \"https://picsum.photos/200/\",\n  categories: [\"Cafe\", \"Bar\"],\n  price: \"$$$\",\n  reviews: 1244,\n  rating: 4.5\n}, {\n  name: \"Benihana\",\n  image_url: \"https://picsum.photos/200/\",\n  categories: [\"Cafe\", \"Bar\"],\n  price: \"$$$\",\n  reviews: 1244,\n  rating: 3.9\n}, {\n  name: \"Pizza Place\",\n  image_url: \"https://picsum.photos/200/\",\n  categories: [\"Cafe\", \"Bar\"],\n  price: \"$\",\n  reviews: 1244,\n  rating: 3.5\n}];\n\nfunction RestaurantItem(props) {\n  return _jsx(TouchableOpacity, {\n    activeOpacity: 0.9,\n    style: {\n      marginBottom: 30\n    },\n    children: localRestaurants.map(function (restaurant, index) {\n      return _jsxs(View, {\n        style: {\n          marginTop: 10,\n          padding: 15,\n          backgroundColor: \"white\"\n        },\n        children: [_jsx(restaurantImage, {\n          image: restaurant.image\n        }), _jsx(restaurantInfo, {\n          rating: restaurant.rating,\n          name: restaurant.name\n        })]\n      });\n    })\n  });\n}\n\nvar restaurantImage = function restaurantImage(props) {\n  return _jsx(_Fragment, {\n    children: _jsx(View, {\n      children: _jsx(ImageBackground, {\n        source: {\n          uri: \"\" + props.image\n        },\n        style: {\n          width: \"100%\",\n          height: 180\n        },\n        children: _jsx(TouchableOpacity, {\n          children: _jsx(MaterialCommunityIcons, {\n            name: \"heart-outline\",\n            size: 24,\n            color: \"#fff\",\n            style: {\n              position: \"absolute\",\n              right: 20,\n              top: 20\n            }\n          })\n        })\n      })\n    })\n  });\n};\n\nvar restaurantInfo = function restaurantInfo(props) {\n  return _jsxs(View, {\n    style: {\n      flexDirection: \"row\",\n      justifyContent: \"space-between\",\n      alignItems: \"center\",\n      marginTop: 10\n    },\n    children: [_jsxs(View, {\n      children: [_jsx(Text, {\n        style: {\n          fontWeight: \"bold\",\n          fontSize: 16\n        },\n        children: props.name\n      }), _jsx(Text, {\n        style: {\n          fontSize: 16,\n          color: \"grey\"\n        },\n        children: \"30-45 min\"\n      })]\n    }), _jsx(View, {\n      style: {\n        backgroundColor: \"#eee\",\n        height: 30,\n        width: 30,\n        alignItems: \"center\",\n        borderRadius: 20,\n        justifyContent: \"center\"\n      },\n      children: _jsx(Text, {\n        style: {\n          fontWeight: \"bold\",\n          fontSize: 16\n        },\n        children: props.rating\n      })\n    })]\n  });\n};\n\nexport default RestaurantItem;",
+  "map": {
+    "version": 3,
+    "sources": [
+      "C:/Users/tomer/OneDrive/Desktop/uberEats/uber-eats-clone/components/RestaurantItem.js"
+    ],
+    "names": [
+      "React",
+      "MaterialCommunityIcons",
+      "localRestaurants",
+      "name",
+      "image_url",
+      "categories",
+      "price",
+      "reviews",
+      "rating",
+      "RestaurantItem",
+      "props",
+      "marginBottom",
+      "map",
+      "restaurant",
+      "index",
+      "marginTop",
+      "padding",
+      "backgroundColor",
+      "image",
+      "restaurantImage",
+      "uri",
+      "width",
+      "height",
+      "position",
+      "right",
+      "top",
+      "restaurantInfo",
+      "flexDirection",
+      "justifyContent",
+      "alignItems",
+      "fontWeight",
+      "fontSize",
+      "color",
+      "borderRadius"
+    ],
+    "mappings": "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",
+    "sourcesContent": [
+      "import React from \"react\";\r\nimport {\r\n  View,\r\n  Text,\r\n  Image,\r\n  TouchableOpacity,\r\n  ImageBackground,\r\n} from \"react-native\";\r\nimport MaterialCommunityIcons from \"react-native-vector-icons/MaterialCommunityIcons\";\r\n\r\nconst localRestaurants = [\r\n  {\r\n    name: \"Beachside Bar\",\r\n    image_url: \"https://picsum.photos/200/\",\r\n    categories: [\"Cafe\", \"Bar\"],\r\n    price: \"$$$\",\r\n    reviews: 1244,\r\n    rating: 4.5,\r\n  },\r\n  {\r\n    name: \"Benihana\",\r\n    image_url: \"https://picsum.photos/200/\",\r\n    categories: [\"Cafe\", \"Bar\"],\r\n    price: \"$$$\",\r\n    reviews: 1244,\r\n    rating: 3.9,\r\n  },\r\n  {\r\n    name: \"Pizza Place\",\r\n    image_url: \"https://picsum.photos/200/\",\r\n    categories: [\"Cafe\", \"Bar\"],\r\n    price: \"$\",\r\n    reviews: 1244,\r\n    rating: 3.5,\r\n  },\r\n];\r\n\r\nfunction RestaurantItem(props) {\r\n  return (\r\n    <TouchableOpacity activeOpacity={0.9} style={{ marginBottom: 30 }}>\r\n      {localRestaurants.map((restaurant, index) => (\r\n        <View\r\n          style={{\r\n            marginTop: 10,\r\n            padding: 15,\r\n            backgroundColor: \"white\",\r\n          }}\r\n        >\r\n          {/*Image */}\r\n          <restaurantImage image={restaurant.image} />\r\n          {/*Info */}\r\n          <restaurantInfo rating={restaurant.rating} name={restaurant.name} />\r\n        </View>\r\n      ))}\r\n    </TouchableOpacity>\r\n  );\r\n}\r\n\r\nconst restaurantImage = (props) => (\r\n  <>\r\n    <View>\r\n      <ImageBackground\r\n        source={{\r\n          uri: `${props.image}`,\r\n        }}\r\n        style={{\r\n          width: \"100%\",\r\n          height: 180,\r\n        }}\r\n      >\r\n        <TouchableOpacity>\r\n          <MaterialCommunityIcons\r\n            name=\"heart-outline\"\r\n            size={24}\r\n            color={\"#fff\"}\r\n            style={{\r\n              position: \"absolute\",\r\n              right: 20,\r\n              top: 20,\r\n            }}\r\n          ></MaterialCommunityIcons>\r\n        </TouchableOpacity>\r\n      </ImageBackground>\r\n    </View>\r\n  </>\r\n);\r\n\r\nconst restaurantInfo = (props) => (\r\n  <View\r\n    style={{\r\n      flexDirection: \"row\",\r\n      justifyContent: \"space-between\",\r\n      alignItems: \"center\",\r\n      marginTop: 10,\r\n    }}\r\n  >\r\n    <View>\r\n      <Text\r\n        style={{\r\n          fontWeight: \"bold\",\r\n          fontSize: 16,\r\n        }}\r\n      >\r\n        {props.name}\r\n      </Text>\r\n      <Text\r\n        style={{\r\n          fontSize: 16,\r\n          color: \"grey\",\r\n        }}\r\n      >\r\n        30-45 min\r\n      </Text>\r\n    </View>\r\n    <View\r\n      style={{\r\n        backgroundColor: \"#eee\",\r\n        height: 30,\r\n        width: 30,\r\n        alignItems: \"center\",\r\n        borderRadius: 20,\r\n        justifyContent: \"center\",\r\n      }}\r\n    >\r\n      <Text\r\n        style={{\r\n          fontWeight: \"bold\",\r\n          fontSize: 16,\r\n        }}\r\n      >\r\n        {props.rating}\r\n      </Text>\r\n    </View>\r\n  </View>\r\n);\r\n\r\nexport default RestaurantItem;\r\n"
+    ]
+  },
+  "metadata": {},
+  "sourceType": "module"
+}
